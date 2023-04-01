@@ -59,14 +59,20 @@ WSGI_APPLICATION = 'web_blog.wsgi.application'
 # Replace by your postgres credentials
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'YourDbName',
-        'USER': 'YourUserName',
-        'PASSWORD': 'YourPassword',
-        'HOST': 'YourHost', # db
-        'PORT': 'YourPort',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'YourDbName',
+#         'USER': 'YourUserName',
+#         'PASSWORD': 'YourPassword',
+#         'HOST': 'YourHost', # db
+#         'PORT': 'YourPort',
+#     }
+# }
 
 
 # Password validation
